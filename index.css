@@ -1,0 +1,123 @@
+.bg-container {
+  background-color: #246db6;
+  min-height: 100vh; /* better than height for responsiveness */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.guess-game-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto; /* center image */
+  display: block;
+}
+
+.game-description {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.guess-bg-container {
+  background-color: #246db6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.guess-heading {
+  color: white;
+  font-family: "Roboto";
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.guess-number-image {
+  width: 50px;
+  max-width: 100%;
+  height: auto;
+}
+
+.user-input {
+  text-align: center;
+  color: #1f2933;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 500;
+  width: 300px;
+  max-width: 90%; /* responsive */
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.game-result {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+}
+
+.check-guess {
+  width: 170px;
+  max-width: 90%;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 10px;
+  display: block;
+}
+
+/* ✅ Mobile Screens (max-width: 576px) */
+@media screen and (max-width: 576px) {
+  .guess-heading {
+    font-size: 26px;
+  }
+
+  .game-description {
+    font-size: 18px;
+  }
+
+  .user-input {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .game-result {
+    font-size: 18px;
+  }
+
+  .check-guess {
+    width: 100%;
+  }
+
+  .guess-number-image {
+    width: 40px;
+  }
+}
+
+/* ✅ Tablet Screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .guess-heading {
+    font-size: 30px;
+  }
+
+  .game-description {
+    font-size: 20px;
+  }
+
+  .user-input {
+    font-size: 26px;
+    width: 80%;
+  }
+}
